@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background: url("../images/bg.jpg") no-repeat center/cover;
+}
+
+body,
+html,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#app {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+#app {
+  font-family: NotoSans;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.head {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  background: url(../images/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: atf 100s linear infinite;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+@-webkit-keyframes atf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
